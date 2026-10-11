@@ -97,14 +97,18 @@ def _parse_card(card: Tag, provider: str, url: str, stamp: datetime) -> Plan:
     price = PRICE.match(text, billed.end()) if billed else PRICE.search(text)
     if price is None:
         raise ParseError("缺少带币种和付款周期的价格")
-    cpu = re.search(r"(\d+)\s*(?:x\s*)?(?:vCPU|CPU|(?:virtual\s+)?cores?)\b", text, re.I)
+    cpu = re.search(r"(\d+)\s*(?:x\s*)?(?:vCPU|vCore|CPU|(?:virtual\s+)?cores?)\b", text, re.I)
     if cpu is None:
         cpu = re.search(r"(?:vCPU|CPU|cores?)\s*:?\s*(\d+)", text, re.I)
     if cpu is None:
         raise ParseError("缺少 CPU 核数")
     ram = _amount(text, r"(?:(?:DDR\d|Dedicated)\s+)?(?:RAM|memory)", 1024)
-    disk = _amount(text, r"(?:(?:NVMe|Pure)\s+)?(?:SSD|HDD|disk|storage)", 1024)
-    bandwidth = _amount(text, r"(?:monthly\s+)?(?:bandwidth|transfer|traffic)", 1000)
+    disk = _amount(text, r"(?:(?:NVMe|Pure)\s+)?(?:SSD|HDD|disk|storage|space)", 1024)
+    bandwidth = (
+        None
+        if re.search(r"unmetered\s+bandwidth|unlim\.", text, re.I)
+        else _amount(text, r"(?:monthly\s+)?(?:bandwidth|transfer|traffic)", 1000)
+    )
     title = card.select_one("h2, h3, h4, .plan-name, .pricing-title, .pricing-header")
     name = " ".join(title.stripped_strings) if title else f"{ram:g} GB RAM / {disk:g} GB"
     marker = price["currency"].upper()

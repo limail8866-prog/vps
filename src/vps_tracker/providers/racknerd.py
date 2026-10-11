@@ -5,12 +5,13 @@ from bs4 import BeautifulSoup
 from ..http import requester
 from ..models import Plan
 from .common import parse_cards, renewal_policy
+from .fallback import fetch_from_sources
 
-SOURCE_URL = "https://www.racknerd.com/BlackFriday/"
+SOURCE_URL = "https://www.racknerd.com/specials/"
 
 
-def parse(html: str) -> list[Plan]:
-    plans = parse_cards(html, "RackNerd", SOURCE_URL)
+def parse(html: str, source_url: str = SOURCE_URL) -> list[Plan]:
+    plans = parse_cards(html, "RackNerd", source_url)
     # 官方 FAQ 明确针对本页所有 VPS specials；只读回答，不从提问推断。
     soup = BeautifulSoup(html, "html.parser")
     for detail in soup.select("#faq details"):
@@ -28,4 +29,4 @@ def parse(html: str) -> list[Plan]:
 
 
 def fetch() -> list[Plan]:
-    return parse(requester.get(SOURCE_URL).text)
+    return fetch_from_sources("racknerd", parse, requester)

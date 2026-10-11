@@ -3,6 +3,7 @@ from datetime import UTC, datetime
 from decimal import Decimal
 
 from vps_tracker import cli
+from vps_tracker.config import Config
 from vps_tracker.fx import Rates
 
 
@@ -78,3 +79,16 @@ def test_empty_provider_is_reported_as_failure(monkeypatch, tmp_path):
     assert cli.run(tmp_path) == 1
     data = json.loads((tmp_path / "data/latest.json").read_text())
     assert "未返回任何可售套餐" in data["failures"]["one"]
+
+
+def test_filter_does_not_remove_plans_from_historical_inventory(monkeypatch, tmp_path, plan):
+    monkeypatch.setattr(
+        cli, "PROVIDERS", {"one": lambda: [plan(), plan(ram_gb=2, url="https://example.com/large")]}
+    )
+    monkeypatch.setattr(cli, "fetch_rates", lambda path: rates())
+    assert cli.run(tmp_path, Config(min_ram_gb=2, sort_by="cny_per_gb")) == 0
+    data = json.loads((tmp_path / "data/latest.json").read_text())
+    assert len(data["plans"]) == 1
+    history = next((tmp_path / "data/history").glob("*.json"))
+    assert len(json.loads(history.read_text())["plans"]) == 2
+    assert "每 GB 内存月均价" in next((tmp_path / "reports").glob("*.md")).read_text()

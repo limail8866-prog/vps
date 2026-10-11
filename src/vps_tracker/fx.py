@@ -1,4 +1,5 @@
 import json
+from collections.abc import Iterable
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from decimal import Decimal, InvalidOperation
@@ -20,10 +21,11 @@ class Rates:
     def cny_per_unit(self, currency: str) -> Decimal:
         return self.rates["CNY"] / self.rates[currency.upper()]
 
-    def to_dict(self) -> dict:
+    def to_dict(self, currencies: Iterable[str] | None = None) -> dict:
+        selected = set(self.rates) if currencies is None else {"USD", "CNY", *currencies}
         return {
             "base": "USD",
-            "rates": {key: str(value) for key, value in self.rates.items()},
+            "rates": {key: str(self.rates[key]) for key in sorted(selected) if key in self.rates},
             "fetched_at": self.fetched_at.isoformat(),
             "cached": self.cached,
             "warning": self.warning,

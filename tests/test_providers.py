@@ -132,4 +132,7 @@ def test_fetch_uses_provider_source(monkeypatch, html, provider):
     urls = []
     monkeypatch.setattr(provider.requester, "get", lambda url: urls.append(url) or Response())
     assert len(provider.fetch()) == 2
-    assert urls == [provider.SOURCE_URL]
+    expected = [provider.SOURCE_URL]
+    if provider is cloudcone:
+        expected.append("https://cloudcone.com/policies/terms/")
+    assert urls == expected

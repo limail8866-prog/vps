@@ -24,13 +24,15 @@ class Plan:
     cpu: int
     ram_gb: float
     disk_gb: float
-    bandwidth_tb: float
+    bandwidth_tb: float | None
     price: Decimal
     currency: str
     billing_cycle: BillingCycle
     renewal_same: bool | None
     url: str
     fetched_at: datetime
+    renewal_note: str | None = None
+    renewal_url: str | None = None
 
     def __post_init__(self) -> None:
         if self.billing_cycle not in MONTHS:
@@ -40,6 +42,7 @@ class Plan:
         if self.cpu < 1 or any(
             not isfinite(value) or value <= 0
             for value in (self.ram_gb, self.disk_gb, self.bandwidth_tb)
+            if value is not None
         ):
             raise ValueError("套餐配置必须为正数")
         if self.fetched_at.tzinfo is None:
@@ -59,4 +62,6 @@ class Plan:
             "renewal_same": self.renewal_same,
             "url": self.url,
             "fetched_at": self.fetched_at.isoformat(),
+            "renewal_note": self.renewal_note,
+            "renewal_url": self.renewal_url,
         }

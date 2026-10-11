@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: vps-daily-${{ github.ref }}
@@ -38,12 +39,17 @@ jobs:
         id: crawl
         continue-on-error: true
         run: uv run --frozen --extra dev python -m vps_tracker run
+      - name: Create deduplicated low-price issues
+        if: ${{ steps.crawl.outcome == 'success' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: uv run --frozen --extra dev python -m vps_tracker alerts --repository "${{ github.repository }}"
       - name: Commit reports, including failure diagnostics
         if: ${{ always() && steps.crawl.outcome != 'skipped' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/*.md data/latest.json
+          git add reports/*.md data/latest.json data/history/*.json
           if ! git diff --cached --quiet; then
             git commit -m "data: update daily VPS ranking"
             git push
