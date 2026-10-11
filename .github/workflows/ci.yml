@@ -1,0 +1,24 @@
+name: Offline checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.23"
+          enable-cache: true
+      - run: uv sync --frozen --extra dev --python 3.11
+      - run: uv run --frozen --extra dev pytest
+      - run: uv run --frozen --extra dev ruff check .
+      - run: uv run --frozen --extra dev ruff format --check .

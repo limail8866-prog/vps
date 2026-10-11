@@ -1,0 +1,29 @@
+# 按顺序尝试来源；HTTP 错误或解析不出套餐时自动使用下一个地址。
+[providers.racknerd]
+sources = [
+  "https://www.racknerd.com/specials/",
+  "https://www.racknerd.com/NewYear/",
+  "https://www.racknerd.com/BlackFriday/",
+]
+
+[providers.cloudcone]
+sources = ["https://cloudcone.com/vps/"]
+renewal_sources = ["https://cloudcone.com/policies/terms/"]
+
+[providers.dedirock]
+sources = [
+  "https://dedirock.com/",
+  "https://dedirock.com/kvm-vps-los-angeles/",
+  "https://dedirock.com/kvm-vps-buffalo/",
+]
+
+[providers.buyvm]
+sources = ["https://buyvm.net/kvm-dedicated-server-slices/"]
+
+[ranking]
+min_ram_gb = 0
+sort_by = "monthly_cny" # 可改为 cny_per_gb（每 GB 内存的人民币月均价）
+
+[alerts]
+enabled = true
+threshold_cny = "20" # 严格低于 20 元/月；只由 alerts 子命令创建 issue
