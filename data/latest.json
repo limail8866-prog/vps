@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-14T11:12:21.331252+08:00",
+  "generated_at": "2026-10-15T10:51:25.323525+08:00",
   "timezone": "Asia/Shanghai",
   "fx": {
     "base": "USD",
     "rates": {
-      "CNY": "6.705025",
+      "CNY": "6.706494",
       "USD": "1"
     },
-    "fetched_at": "2026-10-14T03:12:21.330491+00:00",
+    "fetched_at": "2026-10-15T02:51:25.322809+00:00",
     "cached": false,
     "warning": null
   },
@@ -24,11 +24,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=952",
-      "fetched_at": "2026-10-14T03:12:13.079624+00:00",
+      "fetched_at": "2026-10-15T02:51:17.656812+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "12.2869583125",
-      "cny_per_gb": "12.2869583125"
+      "monthly_cny": "12.289650255",
+      "cny_per_gb": "12.289650255"
     },
     {
       "provider": "CloudCone",
@@ -42,11 +42,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/516/create?token=ssd-vps-1",
-      "fetched_at": "2026-10-14T03:12:14.165794+00:00",
+      "fetched_at": "2026-10-15T02:51:18.691639+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "15.64505833333333333333333333",
-      "cny_per_gb": "15.64505833333333333333333333"
+      "monthly_cny": "15.648486",
+      "cny_per_gb": "15.648486"
     },
     {
       "provider": "DediRock",
@@ -60,11 +60,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/the-i9-dream/i9-vps-ny-core",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "19.55073539583333333333333333",
-      "cny_per_gb": "9.775367697916666666666666665"
+      "monthly_cny": "19.555018755",
+      "cny_per_gb": "9.7775093775"
     },
     {
       "provider": "RackNerd",
@@ -78,29 +78,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=953",
-      "fetched_at": "2026-10-14T03:12:13.079624+00:00",
+      "fetched_at": "2026-10-15T02:51:17.656812+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "20.10948747916666666666666667",
-      "cny_per_gb": "10.05474373958333333333333334"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 1024 — New York",
-      "cpu": 1,
-      "ram_gb": 1.0,
-      "disk_gb": 20.0,
-      "bandwidth_tb": null,
-      "price": "3.50",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1413",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "23.46758750",
-      "cny_per_gb": "23.4675875"
+      "monthly_cny": "20.113893255",
+      "cny_per_gb": "10.0569466275"
     },
     {
       "provider": "DediRock",
@@ -114,11 +96,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/the-i9-dream/i9-vps-ny-plus",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "25.13825622916666666666666667",
-      "cny_per_gb": "8.379418743055555555555555557"
+      "monthly_cny": "25.143763755",
+      "cny_per_gb": "8.381254585"
     },
     {
       "provider": "CloudCone",
@@ -132,11 +114,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/517/create?token=ssd-vps-2",
-      "fetched_at": "2026-10-14T03:12:14.165794+00:00",
+      "fetched_at": "2026-10-15T02:51:18.691639+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "25.70259583333333333333333333",
-      "cny_per_gb": "12.85129791666666666666666666"
+      "monthly_cny": "25.708227",
+      "cny_per_gb": "12.8541135"
     },
     {
       "provider": "DediRock",
@@ -150,11 +132,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/vps-storage/storage-starter",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "26.75304975",
-      "cny_per_gb": "53.5060995"
+      "monthly_cny": "26.75891106",
+      "cny_per_gb": "53.51782212"
     },
     {
       "provider": "DediRock",
@@ -168,11 +150,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/the-i9-dream/i9-vps-ny-power",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "30.7257770625",
-      "cny_per_gb": "7.681444265625"
+      "monthly_cny": "30.732508755",
+      "cny_per_gb": "7.68312718875"
     },
     {
       "provider": "RackNerd",
@@ -186,11 +168,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=954",
-      "fetched_at": "2026-10-14T03:12:13.079624+00:00",
+      "fetched_at": "2026-10-15T02:51:17.656812+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "33.51953747916666666666666667",
-      "cny_per_gb": "8.379884369791666666666666668"
+      "monthly_cny": "33.526881255",
+      "cny_per_gb": "8.38172031375"
     },
     {
       "provider": "CloudCone",
@@ -204,11 +186,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/518/create?token=ssd-vps-3",
-      "fetched_at": "2026-10-14T03:12:14.165794+00:00",
+      "fetched_at": "2026-10-15T02:51:18.691639+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "38.55389375",
-      "cny_per_gb": "12.85129791666666666666666667"
+      "monthly_cny": "38.5623405",
+      "cny_per_gb": "12.8541135"
     },
     {
       "provider": "DediRock",
@@ -222,11 +204,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/kvm-vps-hosting/kvm-vps-start",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "40.16309975",
-      "cny_per_gb": "40.16309975"
+      "monthly_cny": "40.17189906",
+      "cny_per_gb": "40.17189906"
     },
     {
       "provider": "DediRock",
@@ -240,11 +222,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/buffalo-kvm-vps/buff-kvm-vps-start",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "40.16309975",
-      "cny_per_gb": "40.16309975"
+      "monthly_cny": "40.17189906",
+      "cny_per_gb": "40.17189906"
     },
     {
       "provider": "DediRock",
@@ -258,11 +240,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/vps-storage/storage-essentials",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "40.16309975",
-      "cny_per_gb": "40.16309975"
+      "monthly_cny": "40.17189906",
+      "cny_per_gb": "40.17189906"
     },
     {
       "provider": "BuyVM",
@@ -276,29 +258,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1402",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "46.93517500",
-      "cny_per_gb": "23.4675875"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 2048 — Luxembourg",
-      "cpu": 1,
-      "ram_gb": 2.0,
-      "disk_gb": 40.0,
-      "bandwidth_tb": null,
-      "price": "7.00",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1424",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "46.93517500",
-      "cny_per_gb": "23.4675875"
+      "monthly_cny": "46.94545800",
+      "cny_per_gb": "23.4727290"
     },
     {
       "provider": "BuyVM",
@@ -312,11 +276,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1502",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "46.93517500",
-      "cny_per_gb": "23.4675875"
+      "monthly_cny": "46.94545800",
+      "cny_per_gb": "23.4727290"
     },
     {
       "provider": "BuyVM",
@@ -330,11 +294,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1414",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "46.93517500",
-      "cny_per_gb": "23.4675875"
+      "monthly_cny": "46.94545800",
+      "cny_per_gb": "23.4727290"
     },
     {
       "provider": "RackNerd",
@@ -348,11 +312,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=955",
-      "fetched_at": "2026-10-14T03:12:13.079624+00:00",
+      "fetched_at": "2026-10-15T02:51:17.656812+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "50.28209997916666666666666667",
-      "cny_per_gb": "8.380349996527777777777777778"
+      "monthly_cny": "50.293116255",
+      "cny_per_gb": "8.3821860425"
     },
     {
       "provider": "CloudCone",
@@ -366,11 +330,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/519/create?token=ssd-vps-4",
-      "fetched_at": "2026-10-14T03:12:14.165794+00:00",
+      "fetched_at": "2026-10-15T02:51:18.691639+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "51.40519166666666666666666667",
-      "cny_per_gb": "12.85129791666666666666666667"
+      "monthly_cny": "51.416454",
+      "cny_per_gb": "12.8541135"
     },
     {
       "provider": "DediRock",
@@ -384,11 +348,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/kvm-vps-hosting/kvm-vps-pro",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "60.27817475",
-      "cny_per_gb": "30.139087375"
+      "monthly_cny": "60.29138106",
+      "cny_per_gb": "30.14569053"
     },
     {
       "provider": "DediRock",
@@ -402,11 +366,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/buffalo-kvm-vps/buff-kvm-vps-essentials",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "60.27817475",
-      "cny_per_gb": "30.139087375"
+      "monthly_cny": "60.29138106",
+      "cny_per_gb": "30.14569053"
     },
     {
       "provider": "DediRock",
@@ -420,11 +384,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/vps-storage/storage-plus",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "66.98319975",
-      "cny_per_gb": "33.491599875"
+      "monthly_cny": "66.99787506",
+      "cny_per_gb": "33.49893753"
     },
     {
       "provider": "RackNerd",
@@ -438,11 +402,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=956",
-      "fetched_at": "2026-10-14T03:12:13.079624+00:00",
+      "fetched_at": "2026-10-15T02:51:17.656812+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "67.04466247916666666666666667",
-      "cny_per_gb": "8.380582809895833333333333334"
+      "monthly_cny": "67.059351255",
+      "cny_per_gb": "8.382418906875"
     },
     {
       "provider": "DediRock",
@@ -456,11 +420,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/kvm-vps-hosting/kvm-vps-plus",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "87.09827475",
-      "cny_per_gb": "21.7745686875"
+      "monthly_cny": "87.11735706",
+      "cny_per_gb": "21.779339265"
     },
     {
       "provider": "DediRock",
@@ -474,11 +438,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/buffalo-kvm-vps/buff-kvm-vps-plus",
-      "fetched_at": "2026-10-14T03:12:18.649155+00:00",
+      "fetched_at": "2026-10-15T02:51:22.832115+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "87.09827475",
-      "cny_per_gb": "21.7745686875"
+      "monthly_cny": "87.11735706",
+      "cny_per_gb": "21.779339265"
     },
     {
       "provider": "CloudCone",
@@ -492,29 +456,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/520/create?token=ssd-vps-5",
-      "fetched_at": "2026-10-14T03:12:14.165794+00:00",
+      "fetched_at": "2026-10-15T02:51:18.691639+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "97.2228625",
-      "cny_per_gb": "12.1528578125"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 4096 — Las Vegas",
-      "cpu": 1,
-      "ram_gb": 4.0,
-      "disk_gb": 80.0,
-      "bandwidth_tb": null,
-      "price": "15.00",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1403",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "100.57537500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "97.244163",
+      "cny_per_gb": "12.155520375"
     },
     {
       "provider": "BuyVM",
@@ -528,11 +474,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1503",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "100.57537500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "100.59741000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -546,11 +492,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1415",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "100.57537500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "100.59741000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "CloudCone",
@@ -564,47 +510,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/521/create?token=ssd-vps-6",
-      "fetched_at": "2026-10-14T03:12:14.165794+00:00",
+      "fetched_at": "2026-10-15T02:51:18.691639+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "179.9181708333333333333333333",
-      "cny_per_gb": "11.24488567708333333333333333"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 8192 — Luxembourg",
-      "cpu": 2,
-      "ram_gb": 8.0,
-      "disk_gb": 160.0,
-      "bandwidth_tb": null,
-      "price": "30.00",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1426",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "201.15075000",
-      "cny_per_gb": "25.14384375"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 8192 — Miami",
-      "cpu": 2,
-      "ram_gb": 8.0,
-      "disk_gb": 160.0,
-      "bandwidth_tb": null,
-      "price": "30.00",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1504",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "201.15075000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "179.957589",
+      "cny_per_gb": "11.2473493125"
     },
     {
       "provider": "BuyVM",
@@ -618,47 +528,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1416",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "201.15075000",
-      "cny_per_gb": "25.14384375"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 12288 — Las Vegas",
-      "cpu": 3,
-      "ram_gb": 12.0,
-      "disk_gb": 240.0,
-      "bandwidth_tb": null,
-      "price": "45.00",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1405",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "301.72612500",
-      "cny_per_gb": "25.14384375"
-    },
-    {
-      "provider": "BuyVM",
-      "name": "SLICE 12288 — Luxembourg",
-      "cpu": 3,
-      "ram_gb": 12.0,
-      "disk_gb": 240.0,
-      "bandwidth_tb": null,
-      "price": "45.00",
-      "currency": "USD",
-      "billing_cycle": "monthly",
-      "renewal_same": null,
-      "url": "https://my.frantech.ca/cart.php?a=add&pid=1427",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-      "renewal_note": null,
-      "renewal_url": null,
-      "monthly_cny": "301.72612500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "201.19482000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -672,11 +546,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1505",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "301.72612500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "301.79223000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -690,11 +564,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1417",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "301.72612500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "301.79223000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -708,11 +582,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1406",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "402.30150000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "402.38964000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -726,11 +600,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1428",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "402.30150000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "402.38964000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -744,11 +618,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1506",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "402.30150000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "402.38964000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -762,11 +636,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1418",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "402.30150000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "402.38964000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -780,11 +654,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1407",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "502.87687500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "502.98705000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -798,11 +672,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1507",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "502.87687500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "502.98705000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -816,11 +690,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1419",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "502.87687500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "502.98705000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -834,11 +708,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1508",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "603.45225000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "603.58446000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -852,11 +726,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1420",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "603.45225000",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "603.58446000",
+      "cny_per_gb": "25.1493525"
     },
     {
       "provider": "BuyVM",
@@ -870,20 +744,20 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1421",
-      "fetched_at": "2026-10-14T03:12:21.094607+00:00",
+      "fetched_at": "2026-10-15T02:51:25.240558+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "704.02762500",
-      "cny_per_gb": "25.14384375"
+      "monthly_cny": "704.18187000",
+      "cny_per_gb": "25.1493525"
     }
   ],
   "unranked_plans": [],
   "failures": {},
   "changes": {
-    "baseline_date": "2026-10-13",
+    "baseline_date": "2026-10-14",
     "events": [
       {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 1024 — New York",
@@ -904,49 +778,7 @@
         }
       },
       {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 2048 — Las Vegas",
-          "cpu": 1,
-          "ram_gb": 2.0,
-          "disk_gb": 40.0,
-          "bandwidth_tb": null,
-          "price": "7.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1402",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "46.93517500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 2048 — New York",
-          "cpu": 1,
-          "ram_gb": 2.0,
-          "disk_gb": 40.0,
-          "bandwidth_tb": null,
-          "price": "7.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1414",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "46.93517500"
-        }
-      },
-      {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 2048 — Luxembourg",
@@ -967,28 +799,7 @@
         }
       },
       {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 2048 — Miami",
-          "cpu": 1,
-          "ram_gb": 2.0,
-          "disk_gb": 40.0,
-          "bandwidth_tb": null,
-          "price": "7.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1502",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "46.93517500"
-        }
-      },
-      {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 4096 — Las Vegas",
@@ -1009,70 +820,7 @@
         }
       },
       {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 4096 — New York",
-          "cpu": 1,
-          "ram_gb": 4.0,
-          "disk_gb": 80.0,
-          "bandwidth_tb": null,
-          "price": "15.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1415",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "100.57537500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 4096 — Miami",
-          "cpu": 1,
-          "ram_gb": 4.0,
-          "disk_gb": 80.0,
-          "bandwidth_tb": null,
-          "price": "15.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1503",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "100.57537500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 8192 — New York",
-          "cpu": 2,
-          "ram_gb": 8.0,
-          "disk_gb": 160.0,
-          "bandwidth_tb": null,
-          "price": "30.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1416",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "201.15075000"
-        }
-      },
-      {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 8192 — Luxembourg",
@@ -1093,7 +841,7 @@
         }
       },
       {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 8192 — Miami",
@@ -1114,7 +862,7 @@
         }
       },
       {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 12288 — Las Vegas",
@@ -1135,28 +883,7 @@
         }
       },
       {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 12288 — New York",
-          "cpu": 3,
-          "ram_gb": 12.0,
-          "disk_gb": 240.0,
-          "bandwidth_tb": null,
-          "price": "45.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1417",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "301.72612500"
-        }
-      },
-      {
-        "kind": "new",
+        "kind": "removed",
         "plan": {
           "provider": "BuyVM",
           "name": "SLICE 12288 — Luxembourg",
@@ -1174,195 +901,6 @@
           "renewal_url": null,
           "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
           "monthly_cny": "301.72612500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 12288 — Miami",
-          "cpu": 3,
-          "ram_gb": 12.0,
-          "disk_gb": 240.0,
-          "bandwidth_tb": null,
-          "price": "45.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1505",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "301.72612500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 16384 — Las Vegas",
-          "cpu": 4,
-          "ram_gb": 16.0,
-          "disk_gb": 320.0,
-          "bandwidth_tb": null,
-          "price": "60.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1406",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "402.30150000"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 16384 — Luxembourg",
-          "cpu": 4,
-          "ram_gb": 16.0,
-          "disk_gb": 320.0,
-          "bandwidth_tb": null,
-          "price": "60.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1428",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "402.30150000"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 20480 — Las Vegas",
-          "cpu": 5,
-          "ram_gb": 20.0,
-          "disk_gb": 400.0,
-          "bandwidth_tb": null,
-          "price": "75.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1407",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "502.87687500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 20480 — New York",
-          "cpu": 5,
-          "ram_gb": 20.0,
-          "disk_gb": 400.0,
-          "bandwidth_tb": null,
-          "price": "75.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1419",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "502.87687500"
-        }
-      },
-      {
-        "kind": "new",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 24576 — Miami",
-          "cpu": 6,
-          "ram_gb": 24.0,
-          "disk_gb": 480.0,
-          "bandwidth_tb": null,
-          "price": "90.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1508",
-          "fetched_at": "2026-10-14T03:12:21.094607+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "603.45225000"
-        }
-      },
-      {
-        "kind": "removed",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 24576 — Luxembourg",
-          "cpu": 6,
-          "ram_gb": 24.0,
-          "disk_gb": 480.0,
-          "bandwidth_tb": null,
-          "price": "90.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1430",
-          "fetched_at": "2026-10-13T05:05:40.768261+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "603.5238000"
-        }
-      },
-      {
-        "kind": "removed",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 28672 — Luxembourg",
-          "cpu": 7,
-          "ram_gb": 28.0,
-          "disk_gb": 560.0,
-          "bandwidth_tb": null,
-          "price": "105.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1431",
-          "fetched_at": "2026-10-13T05:05:40.768261+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "704.1111000"
-        }
-      },
-      {
-        "kind": "removed",
-        "plan": {
-          "provider": "BuyVM",
-          "name": "SLICE 28672 — Miami",
-          "cpu": 7,
-          "ram_gb": 28.0,
-          "disk_gb": 560.0,
-          "bandwidth_tb": null,
-          "price": "105.00",
-          "currency": "USD",
-          "billing_cycle": "monthly",
-          "renewal_same": null,
-          "url": "https://my.frantech.ca/cart.php?a=add&pid=1509",
-          "fetched_at": "2026-10-13T05:05:40.768261+00:00",
-          "renewal_note": null,
-          "renewal_url": null,
-          "source_url": "https://buyvm.net/kvm-dedicated-server-slices/",
-          "monthly_cny": "704.1111000"
         }
       }
     ],
