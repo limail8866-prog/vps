@@ -58,7 +58,13 @@ def render_report(
         sort_label = (
             "人民币月均价" if ranking_options["sort_by"] == "monthly_cny" else "每 GB 内存月均价"
         )
-        lines += [f"筛选：内存 ≥ {ranking_options['min_ram_gb']:g} GB；排序：{sort_label}。", ""]
+        budget = ranking_options.get("max_monthly_cny")
+        budget_label = f"；月均价 ≤ ¥{budget}" if budget is not None else ""
+        lines += [
+            f"筛选：内存 ≥ {ranking_options['min_ram_gb']:g} GB{budget_label}；"
+            f"排序：{sort_label}。",
+            "",
+        ]
     lines += [
         "| 排名 | 商家 | 套餐 | CPU | 内存 GB | 磁盘 GB | 流量 TB | 原价 | "
         "月均人民币 | 每 GB 内存 | 续费 |",
@@ -83,7 +89,11 @@ def render_report(
     if not ranked:
         empty = (
             "筛选后没有匹配的套餐。"
-            if ranking_options and ranking_options["min_ram_gb"] > 0
+            if ranking_options
+            and (
+                ranking_options["min_ram_gb"] > 0
+                or ranking_options.get("max_monthly_cny") is not None
+            )
             else "本次没有可排名的套餐。"
         )
         lines += ["", empty]
@@ -130,7 +140,7 @@ def render_report(
                     f"{_escape(row['name'])}{detail}"
                 ]
             if not changes["events"]:
-                lines += ["已成功抓取的商家暂无套餐变化。"]
+                lines += ["已成功抓取的商家在当前筛选范围内暂无套餐变化。"]
         else:
             lines += ["尚无前一天的有效快照，本次仅建立历史基线，不推断新上架或下架。"]
         if changes["skipped_providers"]:

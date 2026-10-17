@@ -4,9 +4,24 @@ Python 3.11 项目，每天抓取 RackNerd、CloudCone、DediRock、BuyVM 的公
 输出 `reports/YYYY-MM-DD.md`、`data/latest.json` 和 `data/history/YYYY-MM-DD.json`。
 报告标题、文件日期和生成时间使用北京时间（Asia/Shanghai）。
 
+## 不安装也能查看
+
+打开 [每日中文报告](https://github.com/limail8866-prog/vps/tree/main/reports)，
+选择最新日期的 Markdown 文件即可看到排行、价格变化和抓取状态。
+[Actions](https://github.com/limail8866-prog/vps/actions/workflows/daily.yml) 可以查看执行结果，
+也可以点击 **Run workflow** 手动更新。计划每天北京时间 08:00 运行，GitHub 可能延迟调度。
+低于 20 元/月的套餐会在 [Issues](https://github.com/limail8866-prog/vps/issues) 提醒。
+
 ## 安装与运行
 
-推荐使用 [uv](https://docs.astral.sh/uv/)：
+首次使用先下载仓库并进入目录：
+
+```bash
+git clone https://github.com/limail8866-prog/vps.git
+cd vps
+```
+
+已有仓库可先用 `git pull --ff-only` 更新。推荐使用 [uv](https://docs.astral.sh/uv/)：
 
 ```bash
 uv sync --frozen --extra dev --python 3.11
@@ -31,6 +46,8 @@ python -m vps_tracker run
 ```bash
 # 只看内存至少 2 GB 的套餐，按每 GB 内存月均价排序
 python -m vps_tracker run --min-ram-gb 2 --sort cny_per_gb
+# 只看内存至少 2 GB、月均不超过 20 元的套餐
+python -m vps_tracker run --min-ram-gb 2 --max-monthly-cny 20
 # 使用自定义配置
 python -m vps_tracker run --config ./config.toml
 ```
@@ -38,6 +55,27 @@ python -m vps_tracker run --config ./config.toml
 `config.toml` 保存来源列表、排序/筛选规则和 issue 提醒阈值。命令行筛选覆盖配置文件。
 未指定配置路径时自动读取当前目录的 `config.toml`；目录中没有配置文件时采用内置来源，
 提醒默认关闭。显式指定不存在的文件会报错，避免忽略配置。
+预算可在 `[ranking]` 设置 `max_monthly_cny = "20"`，省略则不限制；采用精确金额比较，
+**包含等于预算的套餐**，区别于低价提醒的严格小于阈值。筛选影响排行、变化列表和提醒候选，
+不会删掉每日完整库存。缺少汇率的套餐仍显示在未参与排名中，无法判断是否符合人民币预算。
+配置项拼写、类型和数值会在联网前校验；`enabled` 必须写 `true` / `false`，不能加引号。
+
+### 离线查看和筛选
+
+已有 `data/latest.json` 时，无需重新抓取就可以查看保存的排行：
+
+```bash
+uv run --frozen python -m vps_tracker show
+uv run --frozen python -m vps_tracker show --min-ram-gb 2 --max-monthly-cny 20
+uv run --frozen python -m vps_tracker show --sort cny_per_gb
+# 读取其他目录的 latest.json，并保存这次筛选结果
+uv run --frozen python -m vps_tracker show --input /path/to/data/latest.json > selected.md
+```
+
+`show` 本身不联网、不创建 issue、不改写报告或历史，保留原始生成时间和汇率；
+首次用 uv 启动仍需安装依赖。`show` 与 `run` 共用配置和命令行筛选参数。
+如果保存的 `latest.json` 已经经过筛选，`show` 只能缩小其中的范围；需要扩大范围时，
+调整配置后重新执行 `run`。快照损坏或路径错误会返回错误提示。
 
 ### 网络与失败处理
 

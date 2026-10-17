@@ -105,3 +105,48 @@ def test_filters_and_per_gb_sort_keep_absolute_prices(plan):
 def test_invalid_filter_rejected(minimum):
     with pytest.raises(ValueError):
         select_plans([], minimum)
+
+
+@pytest.mark.parametrize(
+    ("text", "message"),
+    [
+        ('[alerts]\nenabled = "false"', "布尔值"),
+        ('[alerts]\nthreshold_cny = "cheap"', "有效数字"),
+        ('[alerts]\nthreshold_cny = "NaN"', "有限正数"),
+        ('[ranking]\nmax_monthly_cny = "0"', "有限正数"),
+        ("[ranking]\nmin_ram_gb = true", "有效数字"),
+        ("[ranking]\nsort_by = []", "排序方式"),
+        ("[ranking]\nmin_rma_gb = 2", "未知配置项"),
+        ('ranking = "monthly_cny"', "配置表"),
+        ("[providers.racknerd]\nsources = []", "非空 HTTPS"),
+        ("[providers.cloudcone]\nrenewal_sources = []", "非空 HTTPS"),
+    ],
+)
+def test_malformed_config_is_actionable(tmp_path, text, message):
+    path = tmp_path / "bad.toml"
+    path.write_text(text)
+    with pytest.raises(ValueError, match=message):
+        load_config(path)
+
+
+def test_partial_provider_config_preserves_default_sources(tmp_path):
+    path = tmp_path / "config.toml"
+    path.write_text('[providers.cloudcone]\nrenewal_sources = ["https://example.com/terms"]')
+    config = load_config(path)
+    assert config.sources == Config().sources
+    assert config.renewal_sources == ("https://example.com/terms",)
+
+
+def test_budget_filter_is_inclusive_and_preserves_precise_prices(plan):
+    fx = Rates({"USD": Decimal(1), "CNY": Decimal(1)}, datetime.now(UTC))
+    ranked = rank_plans(
+        [
+            plan(price=Decimal(p), billing_cycle="monthly", name=p)
+            for p in ("19.99", "20", "20.001")
+        ],
+        fx,
+    )
+    assert [row.plan.name for row in select_plans(ranked, max_monthly_cny=Decimal(20))] == [
+        "19.99",
+        "20",
+    ]

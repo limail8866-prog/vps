@@ -4,13 +4,13 @@ from dataclasses import replace
 from datetime import datetime
 from pathlib import Path
 
-from .config import Config, load_config, using_config
+from .config import Config, decimal_value, load_config, using_config
 from .fx import fetch_rates
 from .history import update_history
 from .models import Plan
 from .providers import PROVIDERS
 from .providers.fallback import SOURCE_OBSERVATIONS
-from .rank import rank_plans, select_plans
+from .rank import filter_changes, rank_plans, ranking_options, select_plans
 from .report import write_report
 from .timezone import BEIJING
 
@@ -55,13 +55,8 @@ def _run(output_dir: Path, config: Config) -> int:
     stamp = datetime.now(BEIJING)
     sources = SOURCE_OBSERVATIONS.get() or {}
     changes = update_history(output_dir, plans, rates, successful, failures, stamp, sources)
-    selected = select_plans(ranked, config.min_ram_gb, config.sort_by)
-    changes = {
-        **changes,
-        "events": [
-            event for event in changes["events"] if event["plan"]["ram_gb"] >= config.min_ram_gb
-        ],
-    }
+    selected = select_plans(ranked, config.min_ram_gb, config.sort_by, config.max_monthly_cny)
+    changes = filter_changes(changes, config)
     report, data = write_report(
         output_dir,
         selected,
@@ -70,7 +65,7 @@ def _run(output_dir: Path, config: Config) -> int:
         stamp,
         unranked,
         changes,
-        {"min_ram_gb": config.min_ram_gb, "sort_by": config.sort_by},
+        ranking_options(config),
         sources,
     )
     LOG.info(
@@ -81,7 +76,7 @@ def _run(output_dir: Path, config: Config) -> int:
 
 def run(output_dir: Path, config: Config | None = None) -> int:
     config = config or load_config()
-    select_plans([], config.min_ram_gb, config.sort_by)
+    select_plans([], config.min_ram_gb, config.sort_by, config.max_monthly_cny)
     with using_config(config):
         token = SOURCE_OBSERVATIONS.set({})
         try:
@@ -95,11 +90,13 @@ def main(argv: list[str] | None = None) -> int:
     commands = parser.add_subparsers(dest="command", required=True)
     run_parser = commands.add_parser("run", help="抓取全部商家并生成报告")
     run_parser.add_argument("--output-dir", type=Path, default=Path.cwd())
-    run_parser.add_argument(
-        "--config", type=Path, help="TOML 配置文件，默认读取当前目录 config.toml"
-    )
-    run_parser.add_argument("--min-ram-gb", type=float, help="最低内存 GB，覆盖配置文件")
-    run_parser.add_argument("--sort", choices=["monthly_cny", "cny_per_gb"], help="排序方式")
+    show_parser = commands.add_parser("show", help="离线查看、筛选已有报告，不重新抓取")
+    show_parser.add_argument("--input", type=Path, default=Path("data/latest.json"))
+    for command in (run_parser, show_parser):
+        command.add_argument("--config", type=Path, help="默认读取当前目录 config.toml")
+        command.add_argument("--min-ram-gb", type=float, help="最低内存 GB，覆盖配置文件")
+        command.add_argument("--sort", choices=["monthly_cny", "cny_per_gb"], help="排序方式")
+        command.add_argument("--max-monthly-cny", help="人民币月均预算上限（包含边界）")
     alert_parser = commands.add_parser("alerts", help="对最新报告中低于阈值的套餐创建去重 issue")
     alert_parser.add_argument("--config", type=Path)
     alert_parser.add_argument("--input", type=Path, default=Path("data/latest.json"))
@@ -116,6 +113,15 @@ def main(argv: list[str] | None = None) -> int:
             config = replace(config, min_ram_gb=args.min_ram_gb)
         if args.sort:
             config = replace(config, sort_by=args.sort)
+        if args.max_monthly_cny is not None:
+            config = replace(
+                config, max_monthly_cny=decimal_value(args.max_monthly_cny, "月均预算上限")
+            )
+        if args.command == "show":
+            from .view import show
+
+            print(show(args.input, config), end="")
+            return 0
         return run(args.output_dir.resolve(), config)
     except (ValueError, OSError) as exc:
         parser.error(str(exc))

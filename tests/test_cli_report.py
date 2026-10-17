@@ -92,3 +92,38 @@ def test_filter_does_not_remove_plans_from_historical_inventory(monkeypatch, tmp
     history = next((tmp_path / "data/history").glob("*.json"))
     assert len(json.loads(history.read_text())["plans"]) == 2
     assert "每 GB 内存月均价" in next((tmp_path / "reports").glob("*.md")).read_text()
+
+
+def test_budget_filters_report_changes_but_keeps_inventory(monkeypatch, tmp_path, plan):
+    from datetime import timedelta
+
+    from vps_tracker.history import update_history
+    from vps_tracker.timezone import BEIJING
+
+    stamp = datetime.now(BEIJING)
+    update_history(tmp_path, [], rates(), {"Example"}, {}, stamp - timedelta(days=1))
+    monkeypatch.setattr(
+        cli, "PROVIDERS", {"one": lambda: [plan(), plan(price=Decimal(120), url="https://a.test")]}
+    )
+    monkeypatch.setattr(cli, "fetch_rates", lambda path: rates())
+    assert cli.run(tmp_path, Config(max_monthly_cny=Decimal(20))) == 0
+    payload = json.loads((tmp_path / "data/latest.json").read_text())
+    assert len(payload["plans"]) == len(payload["changes"]["events"]) == 1
+    history = tmp_path / "data/history" / f"{stamp.date()}.json"
+    assert len(json.loads(history.read_text())["plans"]) == 2
+
+
+def test_budget_cli_overrides_config(monkeypatch, tmp_path, plan):
+    path = tmp_path / "config.toml"
+    path.write_text('[ranking]\nmax_monthly_cny = "1"')
+    monkeypatch.setattr(cli, "PROVIDERS", {"one": lambda: [plan()]})
+    monkeypatch.setattr(cli, "fetch_rates", lambda path: rates())
+    assert (
+        cli.main(
+            ["run", "--config", str(path), "--output-dir", str(tmp_path), "--max-monthly-cny", "7"]
+        )
+        == 0
+    )
+    payload = json.loads((tmp_path / "data/latest.json").read_text())
+    assert len(payload["plans"]) == 1
+    assert payload["ranking"]["max_monthly_cny"] == "7"

@@ -22,6 +22,7 @@ sources = ["https://buyvm.net/kvm-dedicated-server-slices/"]
 
 [ranking]
 min_ram_gb = 0
+# max_monthly_cny = "20" # 取消注释可只显示月均价 ≤ 20 元的套餐；不设置则不限
 sort_by = "monthly_cny" # 可改为 cny_per_gb（每 GB 内存的人民币月均价）
 
 [alerts]
