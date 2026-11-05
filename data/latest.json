@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-04T12:30:54.834033+08:00",
+  "generated_at": "2026-11-05T12:46:49.291178+08:00",
   "timezone": "Asia/Shanghai",
   "fx": {
     "base": "USD",
     "rates": {
-      "CNY": "6.684036",
+      "CNY": "6.685421",
       "USD": "1"
     },
-    "fetched_at": "2026-11-04T04:30:54.833428+00:00",
+    "fetched_at": "2026-11-05T04:46:49.290542+00:00",
     "cached": false,
     "warning": null
   },
@@ -24,11 +24,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=952",
-      "fetched_at": "2026-11-04T04:30:46.870888+00:00",
+      "fetched_at": "2026-11-05T04:46:41.644859+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "12.24849597",
-      "cny_per_gb": "12.24849597"
+      "monthly_cny": "12.2510339825",
+      "cny_per_gb": "12.2510339825"
     },
     {
       "provider": "CloudCone",
@@ -42,11 +42,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/516/create?token=ssd-vps-1",
-      "fetched_at": "2026-11-04T04:30:47.690309+00:00",
+      "fetched_at": "2026-11-05T04:46:42.663578+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "15.596084",
-      "cny_per_gb": "15.596084"
+      "monthly_cny": "15.59931566666666666666666667",
+      "cny_per_gb": "15.59931566666666666666666667"
     },
     {
       "provider": "DediRock",
@@ -60,11 +60,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/the-i9-dream/i9-vps-ny-core",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "19.48953497",
-      "cny_per_gb": "9.744767485"
+      "monthly_cny": "19.49357339916666666666666667",
+      "cny_per_gb": "9.746786699583333333333333335"
     },
     {
       "provider": "RackNerd",
@@ -78,11 +78,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=953",
-      "fetched_at": "2026-11-04T04:30:46.870888+00:00",
+      "fetched_at": "2026-11-05T04:46:41.644859+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "20.04653797",
-      "cny_per_gb": "10.023268985"
+      "monthly_cny": "20.05069181583333333333333333",
+      "cny_per_gb": "10.02534590791666666666666666"
     },
     {
       "provider": "DediRock",
@@ -96,11 +96,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/the-i9-dream/i9-vps-ny-plus",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "25.05956497",
-      "cny_per_gb": "8.353188323333333333333333333"
+      "monthly_cny": "25.06475756583333333333333333",
+      "cny_per_gb": "8.35491918861111111111111111"
     },
     {
       "provider": "CloudCone",
@@ -114,11 +114,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/517/create?token=ssd-vps-2",
-      "fetched_at": "2026-11-04T04:30:47.690309+00:00",
+      "fetched_at": "2026-11-05T04:46:42.663578+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "25.622138",
-      "cny_per_gb": "12.811069"
+      "monthly_cny": "25.62744716666666666666666667",
+      "cny_per_gb": "12.81372358333333333333333334"
     },
     {
       "provider": "DediRock",
@@ -132,11 +132,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/vps-storage/storage-starter",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "26.66930364",
-      "cny_per_gb": "53.33860728"
+      "monthly_cny": "26.67482979",
+      "cny_per_gb": "53.34965958"
     },
     {
       "provider": "DediRock",
@@ -150,11 +150,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/the-i9-dream/i9-vps-ny-power",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "30.62959497",
-      "cny_per_gb": "7.6573987425"
+      "monthly_cny": "30.6359417325",
+      "cny_per_gb": "7.658985433125"
     },
     {
       "provider": "RackNerd",
@@ -168,11 +168,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=954",
-      "fetched_at": "2026-11-04T04:30:46.870888+00:00",
+      "fetched_at": "2026-11-05T04:46:41.644859+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "33.41460997",
-      "cny_per_gb": "8.3536524925"
+      "monthly_cny": "33.42153381583333333333333333",
+      "cny_per_gb": "8.355383453958333333333333332"
     },
     {
       "provider": "CloudCone",
@@ -186,11 +186,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/518/create?token=ssd-vps-3",
-      "fetched_at": "2026-11-04T04:30:47.690309+00:00",
+      "fetched_at": "2026-11-05T04:46:42.663578+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "38.433207",
-      "cny_per_gb": "12.811069"
+      "monthly_cny": "38.44117075",
+      "cny_per_gb": "12.81372358333333333333333333"
     },
     {
       "provider": "DediRock",
@@ -204,11 +204,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/kvm-vps-hosting/kvm-vps-start",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "40.03737564",
-      "cny_per_gb": "40.03737564"
+      "monthly_cny": "40.04567179",
+      "cny_per_gb": "40.04567179"
     },
     {
       "provider": "DediRock",
@@ -222,11 +222,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/buffalo-kvm-vps/buff-kvm-vps-start",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "40.03737564",
-      "cny_per_gb": "40.03737564"
+      "monthly_cny": "40.04567179",
+      "cny_per_gb": "40.04567179"
     },
     {
       "provider": "DediRock",
@@ -240,11 +240,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/vps-storage/storage-essentials",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "40.03737564",
-      "cny_per_gb": "40.03737564"
+      "monthly_cny": "40.04567179",
+      "cny_per_gb": "40.04567179"
     },
     {
       "provider": "RackNerd",
@@ -258,11 +258,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=955",
-      "fetched_at": "2026-11-04T04:30:46.870888+00:00",
+      "fetched_at": "2026-11-05T04:46:41.644859+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "50.12469997",
-      "cny_per_gb": "8.354116661666666666666666667"
+      "monthly_cny": "50.13508631583333333333333333",
+      "cny_per_gb": "8.355847719305555555555555555"
     },
     {
       "provider": "CloudCone",
@@ -276,11 +276,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/519/create?token=ssd-vps-4",
-      "fetched_at": "2026-11-04T04:30:47.690309+00:00",
+      "fetched_at": "2026-11-05T04:46:42.663578+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "51.244276",
-      "cny_per_gb": "12.811069"
+      "monthly_cny": "51.25489433333333333333333333",
+      "cny_per_gb": "12.81372358333333333333333333"
     },
     {
       "provider": "DediRock",
@@ -294,11 +294,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/kvm-vps-hosting/kvm-vps-pro",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "60.08948364",
-      "cny_per_gb": "30.04474182"
+      "monthly_cny": "60.10193479",
+      "cny_per_gb": "30.050967395"
     },
     {
       "provider": "DediRock",
@@ -312,11 +312,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/buffalo-kvm-vps/buff-kvm-vps-essentials",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "60.08948364",
-      "cny_per_gb": "30.04474182"
+      "monthly_cny": "60.10193479",
+      "cny_per_gb": "30.050967395"
     },
     {
       "provider": "DediRock",
@@ -330,11 +330,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/vps-storage/storage-plus",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "66.77351964",
-      "cny_per_gb": "33.38675982"
+      "monthly_cny": "66.78735579",
+      "cny_per_gb": "33.393677895"
     },
     {
       "provider": "RackNerd",
@@ -348,11 +348,11 @@
       "billing_cycle": "annually",
       "renewal_same": true,
       "url": "https://my.racknerd.com/cart.php?a=add&pid=956",
-      "fetched_at": "2026-11-04T04:30:46.870888+00:00",
+      "fetched_at": "2026-11-05T04:46:41.644859+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "66.83478997",
-      "cny_per_gb": "8.35434874625"
+      "monthly_cny": "66.84863881583333333333333333",
+      "cny_per_gb": "8.356079851979166666666666666"
     },
     {
       "provider": "DediRock",
@@ -366,11 +366,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/kvm-vps-hosting/kvm-vps-plus",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "86.82562764",
-      "cny_per_gb": "21.70640691"
+      "monthly_cny": "86.84361879",
+      "cny_per_gb": "21.7109046975"
     },
     {
       "provider": "DediRock",
@@ -384,11 +384,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://billing.dedirock.com/index.php/store/buffalo-kvm-vps/buff-kvm-vps-plus",
-      "fetched_at": "2026-11-04T04:30:52.476057+00:00",
+      "fetched_at": "2026-11-05T04:46:46.784870+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "86.82562764",
-      "cny_per_gb": "21.70640691"
+      "monthly_cny": "86.84361879",
+      "cny_per_gb": "21.7109046975"
     },
     {
       "provider": "CloudCone",
@@ -402,11 +402,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/520/create?token=ssd-vps-5",
-      "fetched_at": "2026-11-04T04:30:47.690309+00:00",
+      "fetched_at": "2026-11-05T04:46:42.663578+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "96.918522",
-      "cny_per_gb": "12.11481525"
+      "monthly_cny": "96.9386045",
+      "cny_per_gb": "12.1173255625"
     },
     {
       "provider": "CloudCone",
@@ -420,11 +420,11 @@
       "billing_cycle": "annually",
       "renewal_same": null,
       "url": "https://app.cloudcone.com/vps/521/create?token=ssd-vps-6",
-      "fetched_at": "2026-11-04T04:30:47.690309+00:00",
+      "fetched_at": "2026-11-05T04:46:42.663578+00:00",
       "renewal_note": "同周期自动续费；可提前45天通知调整费用（无锁价保证）",
       "renewal_url": "https://cloudcone.com/policies/terms/",
-      "monthly_cny": "179.354966",
-      "cny_per_gb": "11.209685375"
+      "monthly_cny": "179.3921301666666666666666667",
+      "cny_per_gb": "11.21200813541666666666666667"
     },
     {
       "provider": "BuyVM",
@@ -438,11 +438,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1506",
-      "fetched_at": "2026-11-04T04:30:54.686202+00:00",
+      "fetched_at": "2026-11-05T04:46:49.207813+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "401.04216000",
-      "cny_per_gb": "25.0651350"
+      "monthly_cny": "401.12526000",
+      "cny_per_gb": "25.07032875"
     },
     {
       "provider": "BuyVM",
@@ -456,11 +456,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1418",
-      "fetched_at": "2026-11-04T04:30:54.686202+00:00",
+      "fetched_at": "2026-11-05T04:46:49.207813+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "401.04216000",
-      "cny_per_gb": "25.0651350"
+      "monthly_cny": "401.12526000",
+      "cny_per_gb": "25.07032875"
     },
     {
       "provider": "BuyVM",
@@ -474,11 +474,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1419",
-      "fetched_at": "2026-11-04T04:30:54.686202+00:00",
+      "fetched_at": "2026-11-05T04:46:49.207813+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "501.30270000",
-      "cny_per_gb": "25.0651350"
+      "monthly_cny": "501.40657500",
+      "cny_per_gb": "25.07032875"
     },
     {
       "provider": "BuyVM",
@@ -492,11 +492,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1508",
-      "fetched_at": "2026-11-04T04:30:54.686202+00:00",
+      "fetched_at": "2026-11-05T04:46:49.207813+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "601.56324000",
-      "cny_per_gb": "25.0651350"
+      "monthly_cny": "601.68789000",
+      "cny_per_gb": "25.07032875"
     },
     {
       "provider": "BuyVM",
@@ -510,11 +510,11 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1420",
-      "fetched_at": "2026-11-04T04:30:54.686202+00:00",
+      "fetched_at": "2026-11-05T04:46:49.207813+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "601.56324000",
-      "cny_per_gb": "25.0651350"
+      "monthly_cny": "601.68789000",
+      "cny_per_gb": "25.07032875"
     },
     {
       "provider": "BuyVM",
@@ -528,17 +528,17 @@
       "billing_cycle": "monthly",
       "renewal_same": null,
       "url": "https://my.frantech.ca/cart.php?a=add&pid=1421",
-      "fetched_at": "2026-11-04T04:30:54.686202+00:00",
+      "fetched_at": "2026-11-05T04:46:49.207813+00:00",
       "renewal_note": null,
       "renewal_url": null,
-      "monthly_cny": "701.82378000",
-      "cny_per_gb": "25.0651350"
+      "monthly_cny": "701.96920500",
+      "cny_per_gb": "25.07032875"
     }
   ],
   "unranked_plans": [],
   "failures": {},
   "changes": {
-    "baseline_date": "2026-11-03",
+    "baseline_date": "2026-11-04",
     "events": [],
     "warnings": [],
     "skipped_providers": []
